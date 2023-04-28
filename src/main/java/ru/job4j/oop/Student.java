@@ -6,7 +6,7 @@ public class Student {
     }
 
     public void sing() {
-        System.out.println("I believe i can fly");
+        System.out.println("I believe i can fly ");
     }
 
     public static void main(String[] args) {
