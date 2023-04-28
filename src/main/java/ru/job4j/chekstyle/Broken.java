@@ -10,7 +10,7 @@ public class Broken {
 
     public void echo() { }
 
-    public void method(int a, int b, int c, int d, int e, int f, int g) {
+    public void method(int a, int b, int c, int d, int e, int r, int g) {
 
     }
 
