@@ -16,7 +16,7 @@ public class Triangle {
     }
 
     public boolean exist(double ab, double ac, double bc) {
-        return ab + ac > bc || ab + bc > ac || ac + bc > ab;
+        return ab + ac > bc && ab + bc > ac && ac + bc > ab;
     }
 
     public double area() {
@@ -26,7 +26,6 @@ public class Triangle {
         double bc = second.distance(third);
         if (this.exist(ab, ac, bc)) {
             double p = semiPerimeter(ab, ac, bc);
-            /* написать формулу для расчета площади треугольника. */
             rsl = Math.sqrt(p * ((p - ab) * (p - ac) * (p - bc)));
         }
         return rsl;
