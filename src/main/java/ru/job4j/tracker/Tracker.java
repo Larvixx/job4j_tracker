@@ -27,7 +27,7 @@ public class Tracker {
             System.arraycopy(items, index + 1,
                     items, index, size - index - 1);
             items[size - 1] = null;
-            size--;
+            size --;
         }
         return rsl;
     }
