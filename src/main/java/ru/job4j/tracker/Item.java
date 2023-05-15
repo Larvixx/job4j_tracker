@@ -64,10 +64,10 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
-                "created=" + created.format(FORMATTER) +
-                ", name='" + name + '\'' +
-                ", id=" + id +
-                '}';
+        return "Item{"
+                + "created=" + created.format(FORMATTER)
+                + ", name='" + name + '\''
+                + ", id=" + id
+                + '}';
     }
 }
