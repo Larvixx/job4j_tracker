@@ -8,9 +8,9 @@ public class PersonMain {
         PersonRecord record = new PersonRecord("Иван", 30, "Spb");
         System.out.println("Имя: " + record.name() + ", Возраст: " + record.age());
         System.out.println(record);
-        PersonRecord newRecord = new PersonRecord(record.name(), 35,"MSK");
+        PersonRecord newRecord = new PersonRecord(record.name(), 35, "MSK");
         System.out.println(newRecord);
-        PersonRecord record1 = new PersonRecord("Иван", 30,"Voronezh");
+        PersonRecord record1 = new PersonRecord("Иван", 30, "Voronezh");
         System.out.println(record.equals(record1));
         System.out.println(record1);
     }
