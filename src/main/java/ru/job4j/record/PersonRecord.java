@@ -5,11 +5,11 @@ public record PersonRecord(String name, int age, String city) {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", city='" + city + '\'' +
-                '}';
+        return "Person{"
+                + "name='" + name + '\''
+                + ", age=" + age
+                + ", city='" + city
+                + '\'' + '}';
     }
 
 }
