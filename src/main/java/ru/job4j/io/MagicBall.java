@@ -16,7 +16,7 @@ public class MagicBall {
             case 1:
                 System.out.println("Нет");
                 break;
-            case 2:
+            default:
                 System.out.println("Может быть");
                 break;
         }
