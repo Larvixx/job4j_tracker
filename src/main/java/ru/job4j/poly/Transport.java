@@ -6,6 +6,6 @@ public interface Transport {
     void passengers(int count);
 
     default int refuel(int fuelCount) {
-        return fuelCount * 52;
+        return fuelCount * 54;
     }
 }
