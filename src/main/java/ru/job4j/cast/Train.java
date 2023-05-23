@@ -11,3 +11,4 @@ public class Train implements Vehicle {
         System.out.println(" 100 km/h");
     }
 }
+1
