@@ -14,8 +14,8 @@ public class PolyUsage {
         cow1.giveMilk();
         Cow cow2 = (Cow) cow1;
 
-        Animal[] animals = new Animal[]{animal, domesticAnimal
-                , cow, goose, pet, dog, guineaPig};
+        Animal[] animals = new Animal[]{animal, domesticAnimal,
+                cow, goose, pet, dog, guineaPig};
         for (Animal a : animals) {
             a.sound();
         }

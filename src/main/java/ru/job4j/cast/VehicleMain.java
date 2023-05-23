@@ -9,8 +9,8 @@ public class VehicleMain {
         Vehicle train = new Train();
         Vehicle train2 = new Train();
 
-        Vehicle[] vehicles = new Vehicle[]{airplane, airplane2
-                , bus, bus2, train, train2};
+        Vehicle[] vehicles = new Vehicle[]{airplane, airplane2,
+                bus, bus2, train, train2};
         for (Vehicle v : vehicles) {
             v.move();
             v.speed();
