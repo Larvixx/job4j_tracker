@@ -1,4 +1,4 @@
-package ru.job4j.ПриведениеТипов;
+package ru.job4j.upCasting;
 
 public class PolyUsage {
 
