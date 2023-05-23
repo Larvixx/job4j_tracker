@@ -13,4 +13,3 @@ public class Airplane implements Vehicle {
 
     }
 }
-1

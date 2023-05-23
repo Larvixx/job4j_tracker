@@ -5,4 +5,3 @@ public interface Vehicle {
 
     void speed();
 }
-1

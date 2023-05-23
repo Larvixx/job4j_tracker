@@ -11,4 +11,3 @@ public class Bus implements Vehicle {
         System.out.println(" 60 km/h");
     }
 }
-1
