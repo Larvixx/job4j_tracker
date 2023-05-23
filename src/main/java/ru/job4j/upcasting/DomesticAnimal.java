@@ -1,4 +1,4 @@
-package ru.job4j.upCasting;
+package ru.job4j.upcasting;
 
 public class DomesticAnimal extends Animal {
     public void liveOnFarm() {
