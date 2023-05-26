@@ -16,4 +16,4 @@ public class StartUITest {
         Item expected = new Item("Fix PC");
         assertThat(created.getName()).isEqualTo(expected.getName());
     }
-}1
+}
