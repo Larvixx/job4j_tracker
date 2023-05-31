@@ -10,4 +10,4 @@ public class Paint {
         context.draw(new Triangle());
         context.draw(new Square());
     }
-}
+}1
