@@ -17,4 +17,4 @@ public class DeletedAction implements UserAction {
         }
         return true;
     }
-}
+}1
