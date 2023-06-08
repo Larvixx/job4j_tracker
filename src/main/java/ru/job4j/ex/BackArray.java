@@ -13,4 +13,4 @@ public class BackArray {
         }
         System.out.println(Arrays.toString(names));
     }
-}1
+}
