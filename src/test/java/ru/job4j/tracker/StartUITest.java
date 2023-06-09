@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class StartUITest {
+public class StartUITest {1
 
     @Test
     public void whenReplaceItemTestOutputIsSuccessfully() {
