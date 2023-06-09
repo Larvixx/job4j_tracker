@@ -1,6 +1,6 @@
 package ru.job4j.ex;
 
-public class FindEl {
+public class FindEl {1
     public static int indexOf(String[] value, String key) throws ElementNotFoundException {
         int rsl = -1;
         for (int i = 0; i < value.length; i++) {
@@ -20,7 +20,7 @@ public class FindEl {
             indexOf(value, key);
         } catch (ElementNotFoundException e) {
             System.out.println("Элемент в массиве не найден !");
-            ;
+
         }
     }
 }
