@@ -1,4 +1,4 @@
 package ru.job4j.ex;
 
-public class ElementNotFoundException extends Exception {1
+public class ElementNotFoundException extends Exception {
 }
