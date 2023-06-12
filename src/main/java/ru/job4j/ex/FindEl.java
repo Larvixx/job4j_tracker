@@ -6,21 +6,23 @@ public class FindEl {
         for (int i = 0; i < value.length; i++) {
             if (value[i].equals(key)) {
                 rsl = i;
+                break;
             } else {
-                throw new ElementNotFoundException();
             }
+        }
+        if (rsl == -1) {
+            throw new ElementNotFoundException("Элемент в массиве не найден !");
         }
         return rsl;
     }
 
     public static void main(String[] args) {
-        String[] value = new String[]{"One", "Two"};
-        String key = "Three";
+        String[] value = new String[]{"One", "Two", "Three"};
+        String key = "Two";
         try {
             indexOf(value, key);
         } catch (ElementNotFoundException e) {
-            System.out.println("Элемент в массиве не найден !");
-
+            e.printStackTrace();
         }
     }
 }
