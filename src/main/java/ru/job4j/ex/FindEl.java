@@ -7,7 +7,6 @@ public class FindEl {
             if (value[i].equals(key)) {
                 rsl = i;
                 break;
-            } else {
             }
         }
         if (rsl == -1) {
@@ -25,4 +24,4 @@ public class FindEl {
             e.printStackTrace();
         }
     }
-}
+}1
