@@ -8,16 +8,15 @@ public class FindEl {
                 rsl = i;
                 break;
             }
-        }
-        if (rsl == -1) {
-            throw new ElementNotFoundException("Элемент в массиве не найден !");
-        }
+        }if (rsl == -1){
+        throw new ElementNotFoundException("Элемент в массиве не найден !");
+    }
         return rsl;
     }
 
     public static void main(String[] args) {
-        String[] value = new String[]{"One", "Two", "Three"};
-        String key = "Two";
+        String[] value = new String[]{"One", "Two","Three"};
+        String key = "Four";
         try {
             indexOf(value, key);
         } catch (ElementNotFoundException e) {
