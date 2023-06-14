@@ -21,7 +21,7 @@ public class FindEl {
         try {
             indexOf(value, key);
         } catch (ElementNotFoundException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 }
