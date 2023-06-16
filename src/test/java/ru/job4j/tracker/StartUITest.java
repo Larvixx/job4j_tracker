@@ -20,10 +20,10 @@ public class StartUITest {
         String ln = System.lineSeparator();
         assertThat(out.toString()).isEqualTo(
                 "Menu:" + ln
-                        + "0. Exit" + ln
+                        + "0. Exit Program" + ln
                         + "Wrong input, you can select: 0 .. 0" + ln
                         + "Menu:" + ln
-                        + "0. Exit" + ln
+                        + "0. Exit Program" + ln
                         + "=== Exit Program ===" + ln
         );
     }
