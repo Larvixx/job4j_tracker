@@ -17,4 +17,4 @@ public class User {
     public boolean isValid() {
         return valid;
     }
-}
+}1
