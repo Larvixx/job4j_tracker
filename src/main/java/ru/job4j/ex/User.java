@@ -1,5 +1,5 @@
 package ru.job4j.ex;
-1
+
 public class User {
 
     private String username;
