@@ -5,4 +5,3 @@ public class UserInvalidException extends UserNotFoundException {
         super(message);
     }
 }
-1
