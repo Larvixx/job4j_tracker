@@ -36,7 +36,7 @@ public class PasswordValidator {
             if (Character.isDigit(symbol)) {
                 hasDigit = true;
             }
-            if (!Character.isLetter(symbol) && !Character.isDigit(symbol)) {
+            if (!Character.isLetterOrDigit(symbol)) {
                 hasSpecial = true;
             }
         }
