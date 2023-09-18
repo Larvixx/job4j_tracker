@@ -9,7 +9,6 @@ public class PhoneDictionary {
         this.persons.add(person);
     }
 
-
     public ArrayList<Person> find(String key) {
         ArrayList<Person> result = new ArrayList<>();
         for (Person person : persons) {
@@ -20,4 +19,4 @@ public class PhoneDictionary {
         }
         return result;
     }
-}
+}1
