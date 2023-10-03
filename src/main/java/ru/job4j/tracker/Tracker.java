@@ -55,7 +55,6 @@ public class Tracker {
         return items;
     }
 
-
     public List<Item> findByName(String key) {
         ArrayList<Item> rsl = new ArrayList<>();
         for (Item item : items) {
