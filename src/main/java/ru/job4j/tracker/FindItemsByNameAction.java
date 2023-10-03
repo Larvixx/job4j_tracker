@@ -28,5 +28,5 @@ public class FindItemsByNameAction implements UserAction {
             out.println("Заявки с именем: " + name + " не найдены.");
         }
         return true;
-    }1
+    }
 }
