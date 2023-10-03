@@ -1,5 +1,5 @@
 package ru.job4j.tracker;
-
+1
 public class ExitAction implements UserAction {
     private final Output out;
 

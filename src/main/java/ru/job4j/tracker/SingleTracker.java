@@ -1,7 +1,7 @@
 package ru.job4j.tracker;
 
 import java.util.List;
-
+1
 public final class SingleTracker {
 
     private Tracker tracker = new Tracker();

@@ -3,7 +3,7 @@ package ru.job4j.tracker;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+1
 public class Tracker {
     private final ArrayList<Item> items = new ArrayList<>();
     private int size = 0;
