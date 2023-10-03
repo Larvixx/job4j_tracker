@@ -45,4 +45,4 @@ public class StartUI {
         actions.add(new ExitAction(output));
         new StartUI(output).init(input, tracker, actions);
     }
-}
+}1
