@@ -4,7 +4,7 @@ import java.util.List;
 
 public class ShowAllAction implements UserAction {
     private final Output out;
-1
+
     public ShowAllAction(Output out) {
         this.out = out;
     }
