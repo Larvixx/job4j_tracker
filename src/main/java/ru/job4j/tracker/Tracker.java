@@ -5,13 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Tracker {
-    private final ArrayList<Item> items = new ArrayList<>();
+    private final List<Item> items = new ArrayList<>();
     private int size = 0;
     private int ids = 0;
 
     private int indexOf(int id) {
         int rsl = -1;
-        for (int index = 0; index < size; index++) {
+        for (int index = 0; index < items.size(); index++) {
             if (items.get(index).getId() == id) {
                 rsl = index;
                 break;
@@ -23,26 +23,20 @@ public class Tracker {
     public boolean delete(int id) {
         int index = indexOf(id);
         boolean rsl = index != -1;
-        ArrayList<Item> toRemove = new ArrayList<>();
-        for (Item item : items) {
-            if (items.indexOf(item) == id) {
-                toRemove.add(item);
-                rsl = true;
-            }
+        if (rsl) {
+            items.remove(index);
         }
-        items.removeAll(toRemove);
         return rsl;
     }
 
     public boolean replace(int id, Item item) {
         boolean rsl = false;
-        for (Item item1 : items) {
-            if (item1.getId() == id) {
-                items.set(id, item);
-                rsl = true;
-            }
+        if (indexOf(id) != -1) {
+            items.set(indexOf(id), item);
+            rsl = true;
         }
         return rsl;
+
     }
 
     public Item add(Item item) {
@@ -52,7 +46,7 @@ public class Tracker {
     }
 
     public List<Item> findAll() {
-        return items;
+        return List.copyOf(items);
     }
 
     public List<Item> findByName(String key) {

@@ -1,6 +1,8 @@
 package ru.job4j.tracker;
 
+import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class StartUI {
@@ -10,10 +12,10 @@ public class StartUI {
         this.out = out;
     }
 
-    public void init(Input input, Tracker tracker, ArrayList<UserAction> actions) {
+    public void init(Input input, Tracker tracker, List<UserAction> actions) {
         boolean run = true;
         while (run) {
-            showMenu(actions);
+            showMenu((ArrayList<UserAction>) actions);
             int select = input.askInt("Select: ");
             if (select < 0 || select >= actions.size()) {
                 out.println("Wrong input, you can select: 0 .. " + (actions.size() - 1));
@@ -35,14 +37,14 @@ public class StartUI {
         Output output = new ConsoleOutput();
         Input input = new ValidateInput(output, new ConsoleInput());
         Tracker tracker = new Tracker();
-        ArrayList<UserAction> actions = new ArrayList<>();
-        actions.add(new CreateAction(output));
-        actions.add(new ShowAllAction(output));
-        actions.add(new ReplaceAction(output));
-        actions.add(new DeleteAction(output));
-        actions.add(new FindItemByIdAction(output));
-        actions.add(new FindItemsByNameAction(output));
-        actions.add(new ExitAction(output));
+        UserAction[] action = {
+                new CreateAction(output), new ShowAllAction(output),
+                new ReplaceAction(output), new DeleteAction(output),
+                new FindItemByIdAction(output), new FindItemsByNameAction(output),
+                new ExitAction(output)
+        };
+        List<UserAction> actions = new ArrayList<>(Arrays.asList(action));
+
         new StartUI(output).init(input, tracker, actions);
     }
 }
