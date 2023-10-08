@@ -1,6 +1,5 @@
 package ru.job4j.tracker;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -43,7 +42,7 @@ public class StartUI {
                 new FindItemByIdAction(output), new FindItemsByNameAction(output),
                 new ExitAction(output)
         };
-        List<UserAction> actions = new ArrayList<>(Arrays.asList(action));
+        List<UserAction> actions = Arrays.asList(action);
 
         new StartUI(output).init(input, tracker, actions);
     }

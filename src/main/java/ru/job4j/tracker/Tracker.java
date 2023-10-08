@@ -6,8 +6,7 @@ import java.util.List;
 
 public class Tracker {
     private final List<Item> items = new ArrayList<>();
-    private int size = 0;
-    private int ids = 0;
+    private int ids = 1;
 
     private int indexOf(int id) {
         int rsl = -1;
@@ -31,8 +30,10 @@ public class Tracker {
 
     public boolean replace(int id, Item item) {
         boolean rsl = false;
-        if (indexOf(id) != -1) {
-            items.set(indexOf(id), item);
+        int index = indexOf(id);
+        if (index != -1) {
+            item.setId(id);
+            items.set(index, item);
             rsl = true;
         }
         return rsl;
