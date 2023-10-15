@@ -1,9 +1,10 @@
 package ru.job4j.queue;
-
+1
 import java.util.Queue;
 
 public class AppleStore {
     private final Queue<Customer> queue;
+
     private final int count;
 
     public AppleStore(Queue<Customer> queue, int count) {
@@ -12,13 +13,16 @@ public class AppleStore {
     }
 
     public String getLastHappyCustomer() {
-        for (int i = 0; i < ; i++) {
-            
+        for (int i = 0; i < count - 1; i++) {
+            queue.poll();
         }
-        return "";
+        return queue.peek().name();
     }
 
     public String getFirstUpsetCustomer() {
-        return "";
+        for (int i = 0; i < count; i++) {
+            queue.poll();
+        }
+        return queue.peek().name();
     }
 }
