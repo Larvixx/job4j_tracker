@@ -1,7 +1,7 @@
 package ru.job4j.queue;
 
 import org.junit.jupiter.api.Test;
-1
+
 import java.util.LinkedList;
 import java.util.Queue;
 
