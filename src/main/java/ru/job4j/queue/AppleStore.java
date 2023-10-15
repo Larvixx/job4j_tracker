@@ -4,7 +4,6 @@ import java.util.Queue;
 
 public class AppleStore {
     private final Queue<Customer> queue;
-
     private final int count;
 
     public AppleStore(Queue<Customer> queue, int count) {
@@ -13,6 +12,9 @@ public class AppleStore {
     }
 
     public String getLastHappyCustomer() {
+        for (int i = 0; i < ; i++) {
+            
+        }
         return "";
     }
 
