@@ -42,7 +42,7 @@ public class StartUI {
                 new FindItemByIdAction(output), new FindItemsByNameAction(output),
                 new ExitAction(output)
         };
-        List<UserAction> actions = Arrays.asList(action);
+        List<UserAction> actions = new ArrayList<>(Arrays.asList(action));
 
         new StartUI(output).init(input, tracker, actions);
     }
