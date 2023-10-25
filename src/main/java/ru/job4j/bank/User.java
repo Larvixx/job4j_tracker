@@ -1,5 +1,5 @@
 package ru.job4j.bank;
-1
+
 import java.util.Objects;
 
 public class User {

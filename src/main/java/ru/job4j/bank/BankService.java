@@ -1,5 +1,5 @@
 package ru.job4j.bank;
-1
+
 import ru.job4j.bank.Account;
 import ru.job4j.bank.User;
 
