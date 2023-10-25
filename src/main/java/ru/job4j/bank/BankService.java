@@ -1,5 +1,5 @@
 package ru.job4j.bank;
-
+1
 import ru.job4j.bank.Account;
 import ru.job4j.bank.User;
 
@@ -56,8 +56,8 @@ public class BankService {
         boolean rsl = false;
         Account srcAccount = findByRequisite(srcPassport, srcRequisite);
         Account destAccount = findByRequisite(destPassport, destRequisite);
-        if (srcAccount == null || destAccount == null ||
-                srcAccount.getBalance() < amount) {
+        if (srcAccount == null || destAccount == null
+                || srcAccount.getBalance() < amount) {
             return rsl;
         }
         srcAccount.setBalance(srcAccount.getBalance() - amount);
