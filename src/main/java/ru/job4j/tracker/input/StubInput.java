@@ -1,5 +1,5 @@
 package ru.job4j.tracker.input;
-
+1
 import ru.job4j.tracker.input.Input;
 
 public class StubInput implements Input {

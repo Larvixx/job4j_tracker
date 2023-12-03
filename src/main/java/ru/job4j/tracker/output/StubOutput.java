@@ -1,5 +1,5 @@
 package ru.job4j.tracker.output;
-
+1
 import ru.job4j.tracker.output.Output;
 
 public class StubOutput implements Output {
