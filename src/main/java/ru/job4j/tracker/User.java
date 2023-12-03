@@ -1,5 +1,5 @@
 package ru.job4j.tracker;
-1
+
 public class User {
     private int id;
 
