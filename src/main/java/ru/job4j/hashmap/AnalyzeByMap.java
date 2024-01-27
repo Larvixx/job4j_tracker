@@ -1,5 +1,5 @@
 package ru.job4j.hashmap;
-
+1
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -19,13 +19,11 @@ public class AnalyzeByMap {
     public static List<Label> averageScoreByPupil(List<Pupil> pupils) {
         List<Label> labels = new ArrayList<>();
         for (Pupil pupil : pupils) {
-            int count = 0;
             double score = 0;
             for (Subject subject : pupil.subjects()) {
-                count++;
                 score += subject.score();
             }
-            labels.add(new Label(pupil.name(), score / count));
+            labels.add(new Label(pupil.name(), score / pupils.size()));
         }
         return labels;
     }
@@ -34,26 +32,51 @@ public class AnalyzeByMap {
         LinkedHashMap<String, Integer> tempMap = new LinkedHashMap<>();
         List<Label> labels = new ArrayList<>();
         int score = 0;
-        int countPupil = 0;
         for (Pupil pupil : pupils) {
-            score = 0;
-            countPupil++;
             for (Subject subject : pupil.subjects()) {
-                tempMap.put(subject.name(), subject.score());
+                if (tempMap.get(subject.name()) != null) {
+                    score = tempMap.get(subject.name());
+                }
+                tempMap.put(subject.name(), subject.score() + score);
             }
         }
         for (String key : tempMap.keySet()) {
             Integer value = tempMap.get(key);
-            labels.add(new Label(key, (double) value / countPupil));
+            labels.add(new Label(key, (double) value / pupils.size()));
         }
         return labels;
     }
 
     public static Label bestStudent(List<Pupil> pupils) {
-        return null;
+        List<Label> labels = new ArrayList<>();
+        for (Pupil pupil : pupils) {
+            double score = 0;
+            for (Subject subject : pupil.subjects()) {
+                score += subject.score();
+            }
+            labels.add(new Label(pupil.name(), score));
+        }
+        labels.sort(Comparator.naturalOrder());
+        return labels.get(labels.size() - 1);
     }
 
     public static Label bestSubject(List<Pupil> pupils) {
-        return null;
+        LinkedHashMap<String, Integer> tempMap = new LinkedHashMap<>();
+        List<Label> labels = new ArrayList<>();
+        int score = 0;
+        for (Pupil pupil : pupils) {
+            for (Subject subject : pupil.subjects()) {
+                if (tempMap.get(subject.name()) != null) {
+                    score = tempMap.get(subject.name());
+                }
+                tempMap.put(subject.name(), subject.score() + score);
+            }
+        }
+        for (String key : tempMap.keySet()) {
+            Integer value = tempMap.get(key);
+            labels.add(new Label(key, value));
+        }
+        labels.sort(Comparator.naturalOrder());
+        return labels.get(labels.size() - 1);
     }
 }

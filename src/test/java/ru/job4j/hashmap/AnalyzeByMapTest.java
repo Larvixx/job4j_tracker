@@ -1,5 +1,5 @@
 package ru.job4j.hashmap;
-
+1
 import org.junit.jupiter.api.Test;
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;

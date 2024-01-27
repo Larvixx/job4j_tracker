@@ -1,5 +1,5 @@
 package ru.job4j.hashmap;
-
+1
 public record Label(String name, double score)
         implements Comparable<Label> {
     @Override
