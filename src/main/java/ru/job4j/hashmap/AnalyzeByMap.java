@@ -33,10 +33,7 @@ public class AnalyzeByMap {
         int score = 0;
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                if (tempMap.get(subject.name()) != null) {
-                    score = tempMap.get(subject.name());
-                }
-                tempMap.put(subject.name(), subject.score() + score);
+                tempMap.put(subject.name(), subject.score() + tempMap.getOrDefault(subject.name(), 0));
             }
         }
         for (String key : tempMap.keySet()) {
