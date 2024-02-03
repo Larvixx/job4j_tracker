@@ -30,10 +30,10 @@ public class AnalyzeByMap {
     public static List<Label> averageScoreBySubject(List<Pupil> pupils) {
         LinkedHashMap<String, Integer> tempMap = new LinkedHashMap<>();
         List<Label> labels = new ArrayList<>();
-        int score = 0;
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                tempMap.put(subject.name(), subject.score() + tempMap.getOrDefault(subject.name(), 0));
+                tempMap.put(subject.name(), subject.score()
+                        + tempMap.getOrDefault(subject.name(), 0));
             }
         }
         for (String key : tempMap.keySet()) {
