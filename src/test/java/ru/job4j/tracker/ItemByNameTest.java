@@ -9,7 +9,7 @@ import java.util.*;
 class ItemByNameTest {
 
     @Test
-    public void ThenAscByName() {
+    public void thenAscByName() {
         List<Item> items = Arrays.asList(
                 new Item("Bear"),
                 new Item("Cat"),
@@ -26,7 +26,7 @@ class ItemByNameTest {
     }
 
     @Test
-    public void ThenDescByName() {
+    public void thenDescByName() {
         List<Item> items = Arrays.asList(
                 new Item("Bear"),
                 new Item("Cat"),
