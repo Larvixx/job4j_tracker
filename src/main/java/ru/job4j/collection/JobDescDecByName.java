@@ -1,5 +1,5 @@
 package ru.job4j.collection;
-
+1
 import java.util.Comparator;
 
 public class JobDescDecByName implements Comparator<Job> {

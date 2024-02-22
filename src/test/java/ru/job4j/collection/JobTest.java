@@ -1,5 +1,5 @@
 package ru.job4j.collection;
-
+1
 import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
