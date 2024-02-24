@@ -12,10 +12,10 @@ public class JobTest {
         Comparator<Job> cmpNamePriority =
                 new JobDescIncByName().thenComparing(new JobDescIncByPriority());
         int rsl = cmpNamePriority.compare(
-                new Job("Impl task", 0),
-                new Job("Fix bug", 1)
+                new Job("impl task", 0),
+                new Job("Impl task", 1)
         );
-        assertThat(rsl).isEqualTo(3);
+        assertThat(rsl).isEqualTo(-1);
     }
 
     @Test
