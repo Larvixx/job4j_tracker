@@ -5,6 +5,6 @@ import java.util.Comparator;
 public class JobDescDecByName implements Comparator<Job> {
     @Override
     public int compare(Job o1, Job o2) {
-        return o2.getName().compareToIgnoreCase(o1.getName());
+        return o2.getName().compareTo(o1.getName());
     }
 }
