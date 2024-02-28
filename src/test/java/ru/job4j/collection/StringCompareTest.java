@@ -62,5 +62,13 @@ public class StringCompareTest {
                 "Ivanovskaya"
         );
         assertThat(result).isLessThan(0);
+    }@Test
+    public void whenRightMoreLessThanLeftResultShouldBeNegative() {
+        StringCompare compare = new StringCompare();
+        int result = compare.compare(
+                "Petrovskii",
+                "Petrov"
+        );
+        assertThat(result).isGreaterThan(0);
     }
 }
