@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 public class ScheduleTask {
     private PriorityQueue<Task> queue;
-1
+
     public ScheduleTask(Comparator<Task> comparator) {
         this.queue = new PriorityQueue<>(comparator);
     }

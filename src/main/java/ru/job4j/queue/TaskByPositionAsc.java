@@ -1,5 +1,5 @@
 package ru.job4j.queue;
-1
+
 import java.util.Collections;
 import java.util.Comparator;
 
