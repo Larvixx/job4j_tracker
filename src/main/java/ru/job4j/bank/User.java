@@ -2,6 +2,12 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс описывает модель пользователя банка
+ * Поле passport содержит номер паспорта пользователя
+ * Поле username содержит ФИО пользователя
+ * Сравнение equals происходит по полю passport
+ */
 public class User {
     private String passport;
     private String username;

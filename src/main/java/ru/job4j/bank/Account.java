@@ -2,8 +2,16 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * Модель данных для банковского счёта
+ * Поле requisite содержит реквизиты счета
+ * Поле balance содержит баланс счета
+ * Сравнение equals происходит по реквизитам
+ */
 public class Account {
+
     private String requisite;
+
     private double balance;
 
     public Account(String requisite, double balance) {
