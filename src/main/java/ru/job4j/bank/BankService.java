@@ -86,12 +86,14 @@ public class BankService {
      * проверяя наличие данного счёта и достаточный баланс
      * для проведения операции
      *
-     * @param srcPassport
-     * @param srcRequisite
-     * @param destPassport
-     * @param destRequisite
-     * @param amount
-     * @return true or false
+     * @param srcPassport   Номер паспорта отправителя
+     * @param srcRequisite  Номер счёта отправителя
+     * @param destPassport  Номер паспорта получателя
+     * @param destRequisite Номер счёта отправителя
+     * @param amount        Сумма перевода
+     * @return Если номера счёта отправителя или получателя
+     * не существует или суммы на счёте отправителя недостаточно
+     * метод вернёт false
      */
     public boolean transferMoney(String srcPassport, String srcRequisite, String destPassport, String destRequisite, double amount) {
         Account srcAccount = findByRequisite(srcPassport, srcRequisite);
