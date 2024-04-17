@@ -1,6 +1,6 @@
 
 package ru.job4j.collection;
-1
+
 import java.util.*;
 
 public class Departments {
