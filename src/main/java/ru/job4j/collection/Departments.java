@@ -27,8 +27,10 @@ public class Departments {
     }
 
     public static void sortAsc(List<String> departments) {
+        Collections.sort(departments);
     }
 
     public static void sortDesc(List<String> departments) {
+        departments.sort(new DepartmentsDescComparator());
     }
 }
