@@ -8,9 +8,7 @@ import java.util.List;
 public class DepartmentsDescComparator implements Comparator<String> {
     @Override
     public int compare(String left, String right) {
-        if (left.split("/", 2)[0].equals(right.split("/", 2)[0])) {
-            return left.compareTo(right);
-        }
-        return right.compareTo(left);
+        int result = right.split("/", 2)[0].compareTo(left.split("/", 2)[0]);
+        return result != 0 ? result : left.compareTo(right);
     }
 }

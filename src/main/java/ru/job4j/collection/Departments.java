@@ -9,17 +9,17 @@ public class Departments {
         List<String> result = new ArrayList<>();
         Set<String> temp = new LinkedHashSet<>();
         for (String value : departments) {
-            StringBuilder start = new StringBuilder();
+            String start = "";
             for (String element : value.split("/")) {
                 temp.add(start + element);
-                start = new StringBuilder("/");
+                start = "/";
             }
-            start = new StringBuilder();
+            start = "";
             for (String temps : temp) {
                 if (!result.contains(start + temps)) {
                     result.add(start + temps);
                 }
-                start.append(temps);
+                start += temps;
             }
             temp.clear();
         }
